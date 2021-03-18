@@ -29,3 +29,16 @@ section{
     margin: auto;
     padding-bottom: 20px;
 }
+
+
+.img_my_card{
+    width: 100%;
+    height: 100px;
+}
+
+
+/* utilities */
+
+.grey_section{
+    background-color: #F3F5F9;
+}
