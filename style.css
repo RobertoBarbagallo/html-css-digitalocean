@@ -1,19 +1,4 @@
-/* .navbar-header a{
-    max-height: 100%;
-    margin-right: 70px;
-}
-
-.navbar-header img{
-    max-height: 100%;
-}
-
-.navbar-right button{
-    margin-top: 8px;
-}
-
-.navbar{
-    margin-bottom: 0px;
-} */
+/* MY NAVBAR */
 
 .my_nav_bar{
     background-color: white;
@@ -49,9 +34,6 @@
     border: 1px solid  #2B8EFF;
 }
 
-
-
-
 .my_hamburger_container{
     width: 100%;
     height: 70px;
@@ -65,15 +47,24 @@
     background-color: #2B8EFF;
 }
 
-
-
+/* MY HERO */
 
 section{
     padding: 50px 0px;
 }
 
-.hero{
+.my_hero{
     background-image: url(img/bg-banner-home.jpg);
+}
+
+.my_hero h1{
+    font-size: 50px;
+    color: white;
+}
+
+.my_hero p{
+    font-size: 20px;
+    color: #BBCDFF
 }
 
 .panel_container{
@@ -81,16 +72,49 @@ section{
     margin: auto;
     padding-bottom: 20px;
 }
+.my_google_btn{
+    height: 46px;
+    position: relative;
+}
+
+.my_google_img_container{
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    position: relative;
+}
+.my_google_img_container img{
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.my_btn_text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #1B2E5E;
+}
 
 
-.img_my_card{
+
+
+
+/* .img_my_card{
     /* width: 100%; */
     height: 100px;
-}
+} */
 
 
 /* utilities */
 
 .grey_section{
     background-color: #F3F5F9;
+}
+
+.my_blue_text{
+    color: #2B8EFF;
 }
