@@ -154,11 +154,10 @@ section{
     padding-top: 30px;
 }
 
-/* BIG CAROUSEL */
+/* BIG SLIDE */
 .my_icon_container{
     position: relative;
     height: 400px;
-    
 }
 
 .my_icon_container i{
@@ -192,7 +191,11 @@ section{
 }
 
 
-/* utilities */
+
+
+
+
+/* Utilities */
 
 .grey_section{
     background-color: #F3F5F9;
@@ -217,4 +220,8 @@ section{
     .my_sponsors_card{
         width: 50%
     }
+}
+
+.my_p_60_l{
+    padding-left: 60px;
 }
