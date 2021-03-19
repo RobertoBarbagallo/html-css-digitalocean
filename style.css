@@ -1,4 +1,4 @@
-.navbar-header a{
+/* .navbar-header a{
     max-height: 100%;
     margin-right: 70px;
 }
@@ -13,7 +13,59 @@
 
 .navbar{
     margin-bottom: 0px;
+} */
+
+.my_nav_bar{
+    background-color: white;
 }
+
+.my_img_container img{
+    height: 70px;
+    width: 100%;
+    object-fit: contain;  
+}
+
+.my_list a{
+    width: 100%;
+    line-height: 70px;
+    color: #1B2E5E;
+}
+
+.my_list{
+    height: 70px;
+    margin-bottom: 0;
+}
+
+.my_list_col{
+    height: 100%
+}
+
+.my_invisible_button, .my_blue_botton{
+    background-color: transparent;
+}
+
+.my_blue_botton{
+    color: #2B8EFF;
+    border: 1px solid  #2B8EFF;
+}
+
+
+
+
+.my_hamburger_container{
+    width: 100%;
+    height: 70px;
+    padding: calc((70px / 2) / 3) 0px;
+}
+
+.my_hamburger{
+    width: 100%;
+    height: 2px;
+    margin: calc((70px / 2) / 3) 0px;
+    background-color: #2B8EFF;
+}
+
+
 
 
 section{
