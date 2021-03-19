@@ -4,8 +4,12 @@
     background-color: white;
 }
 
-.my_img_container img{
+.my_img_container{
     height: 70px;
+}
+
+.my_img_container img{
+    height: 100%;
     width: 100%;
     object-fit: contain;  
 }
@@ -35,9 +39,10 @@
 }
 
 .my_hamburger_container{
-    width: 100%;
+    width: 50px;
     height: 70px;
     padding: calc((70px / 2) / 3) 0px;
+    padding-right: 20px;
 }
 
 .my_hamburger{
@@ -132,10 +137,32 @@ section{
     color: #2B8EFF;
 }
 
-@media screen and (max-width: 767px){
-    .my_sponsors_card{
-        width: 50%
-    }
+
+/* FIRST WHITE SECTION */
+
+.my_list_title{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.my_list_par{
+    color: #3B5179;
+    margin-bottom: 40px;
+}
+
+.my_list_item{
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 1px solid #CACACA;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #677594;
+}
+
+.my_row{
+    padding-top: 30px;
 }
 
 
@@ -147,4 +174,11 @@ section{
 
 .my_blue_text{
     color: #2B8EFF;
+}
+
+
+@media screen and (max-width: 767px){
+    .my_sponsors_card{
+        width: 50%
+    }
 }
