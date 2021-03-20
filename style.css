@@ -64,7 +64,6 @@ section{
 
 .my_hero h1{
     font-size: 50px;
-    color: white;
 }
 
 .my_hero p{
@@ -72,29 +71,33 @@ section{
     color: #BBCDFF
 }
 
-.panel_container{
-    width: 80%;
+.my_panel_container{
+    width: 90%;
     margin: auto;
     padding-bottom: 20px;
 }
 .my_google_btn{
     height: 46px;
-    position: relative;
 }
 
 .my_google_img_container{
-    width: 100%;
-    height: 100%;
-    padding: 8px;
     position: relative;
-}
-.my_google_img_container img{
     height: 100%;
-    position: absolute;
-    left: 0px;
-    top: 50%;
-    transform: translateY(-50%);
 }
+
+.my_google_img_container img{
+  height: 24px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.my_google_btn_text_container{
+    position: relative;
+    height: 100%;
+}
+
 
 .my_btn_text{
     position: absolute;
@@ -177,19 +180,37 @@ section{
 }
 
 
-.my_dots{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: 1px solid #2B8EFF;
-    display: inline-block;
+/* SMALL SLIDE */
+
+.my_icon_container_two{
+    position: relative;
+    height: 300px;
+}
+
+.my_icon_container_two i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+
+.my_slide_container_two{
+    height: 300px;
+}
+
+.my_slide_container_two .my_panel_container{
+    padding-top: 40px;
+}
+
+.my_slide_container_two .my_panel_container img{
+    width: 50%;
+    margin-bottom: 20px;
 }
 
 
-.my_full_dot{
-    background-color:  #2B8EFF;
+.my_dots_container_two{
+    margin-top: 30px;
 }
-
 
 
 
@@ -222,6 +243,41 @@ section{
     }
 }
 
+.my_dots{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #2B8EFF;
+    display: inline-block;
+}
+
+
+.my_full_dot{
+    background-color:  #2B8EFF;
+}
+
 .my_p_60_l{
     padding-left: 60px;
 }
+
+.my_blue_section{
+    background: linear-gradient(180deg, rgba(1,72,197,1) 0%, rgba(1,30,153,1) 35%);
+}
+
+.text_white{
+    color: white;
+}
+
+
+.my_table{
+    margin: auto;
+    color: white;
+    margin-top: 30px;
+}
+
+
+.my_td{
+    padding: 10px 20px;
+    border-bottom: 1px solid white;
+}
+
