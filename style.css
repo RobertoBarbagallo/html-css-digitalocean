@@ -11,22 +11,18 @@
 .my_img_container img{
     height: 100%;
     width: 100%;
-    object-fit: contain;  
+    object-fit: contain;
 }
 
-.my_list a{
-    width: 100%;
-    line-height: 70px;
-    color: #1B2E5E;
-}
-
-.my_list{
+.my_list_row{
     height: 70px;
     margin-bottom: 0;
 }
 
-.my_list_col{
-    height: 100%
+.my_list_row a{
+    width: 100%;
+    line-height: 70px;
+    color: #1B2E5E;
 }
 
 .my_invisible_button, .my_blue_botton{
@@ -38,11 +34,12 @@
     border: 1px solid  #2B8EFF;
 }
 
+
 .my_hamburger_container{
-    width: 50px;
+    width: 30px;
     height: 70px;
     padding: calc((70px / 2) / 3) 0px;
-    padding-right: 20px;
+    margin-right: 20px;
 }
 
 .my_hamburger{
@@ -50,6 +47,7 @@
     height: 2px;
     margin: calc((70px / 2) / 3) 0px;
     background-color: #2B8EFF;
+    border-radius: 1px;
 }
 
 /* MY HERO */
@@ -71,49 +69,34 @@ section{
     color: #BBCDFF
 }
 
-.my_panel_container{
+.my_panel_container_one{
     width: 90%;
     margin: auto;
     padding-bottom: 20px;
 }
+
 .my_google_btn{
-    height: 46px;
-}
-
-.my_google_img_container{
     position: relative;
-    height: 100%;
 }
 
-.my_google_img_container img{
-  height: 24px;
+.my_google_btn img{
+  height: 70%;
+  width: 10%;
+  object-fit: contain;
   position: absolute;
-  left: 0;
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.my_google_btn_text_container{
-    position: relative;
-    height: 100%;
-}
 
-
-.my_btn_text{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: #1B2E5E;
-}
-
-/* MY GREY SECTION */
+/* FIRST GREY SECTION */
 
 .my_sponsors_row{
     margin: 40px 0px;
 }
 
-.sponsors_text{
+.my_sponsors_text{
     color: #677594;
     font-size: 20px;
 }
@@ -133,7 +116,7 @@ section{
     object-fit: contain;
 }
 
-.sponsors_text a{
+.my_sponsors_text a{
     font-size: 14px;
     color: #2B8EFF;
 }
@@ -159,12 +142,14 @@ section{
 
 .my_icon_container{
     display: inline-block;
-    height: 80px;
     width: 10%;
     vertical-align: middle;
     font-size: 14px;
 }
 
+.my_icon_container >i{
+    color:  #3B5179;
+}
 
 .my_slide_container{
     display: inline-block;
@@ -182,15 +167,32 @@ section{
     font-weight: bold;
 }
 
+.my_icon_container >i:hover{
+    color: black;
+
+}
+
+
+/* BLUE GRADIENT SECTION */
+
+.my_table{
+    margin: auto;
+    color: white;
+    margin-top: 30px;
+}
+
+
+.my_td{
+    padding: 10px 20px;
+    border-bottom: 1px solid white;
+}
+
 
 /* SMALL SLIDE */
 
-.my_panel_container{
-    padding-top: 40px;
-}
-
 .my_panel_container img{
     width: 50%;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
@@ -230,9 +232,66 @@ footer{
     color: #8791A6;
 }
 
+/* MY FIXED FISH */
+.my_fixed_cloud{
+    position: fixed;
+    bottom: 20px;
+    right: 120px;
+    display: none;
+}
 
+.my_cloud{
+    position: relative;
+    width: 180px;
+    height: 60px;
+    background-color: white;
+    border-radius: 6px;
+    padding-left: 6px;
+}
 
+.my_arrow_right {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid white;
+    position: absolute;
+    bottom: 10px;
+    right: -10px;
+  }
+  
 
+.my_fixed_fish{
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    background-color: #026AFF;
+    border-radius: 6px;
+}
+
+.my_fixed_fish img{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.my_red_dot{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+}
+
+a.my_pop_up:hover + .my_fixed_cloud{
+    display: block;
+}
 
 /* Utilities */
 
@@ -284,19 +343,6 @@ footer{
 
 .text_white{
     color: white;
-}
-
-
-.my_table{
-    margin: auto;
-    color: white;
-    margin-top: 30px;
-}
-
-
-.my_td{
-    padding: 10px 20px;
-    border-bottom: 1px solid white;
 }
 
 .my_no_gap{
