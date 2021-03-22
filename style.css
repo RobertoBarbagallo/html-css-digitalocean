@@ -333,9 +333,6 @@ a.my_pop_up:hover + .my_fixed_cloud{
 }
 
 
-
-
-
 /* Utilities */
 
 .grey_section{
@@ -399,6 +396,7 @@ a.my_pop_up:hover + .my_fixed_cloud{
         bottom: 100px;
         left: 40px;
         width: 60px;
+        height: 60px;
     }
 
     .my_fixed_cloud{
