@@ -42,7 +42,6 @@
 }
 
 .my_hamburger{
-    width: 100%;
     height: 2px;
     margin: calc((70px / 2) / 3) 0px;
     background-color: #2B8EFF;
