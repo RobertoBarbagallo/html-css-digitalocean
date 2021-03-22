@@ -180,12 +180,17 @@ section{
     margin-top: 30px;
 }
 
-
-.my_td{
-    padding: 10px 20px;
+.my_tr{
     border-bottom: 1px solid white;
 }
 
+.my_td{
+    padding: 10px 20px;
+}
+
+.my_table .my_tr:last-child{
+   border-bottom: none;
+}
 
 /* SMALL SLIDE */
 
