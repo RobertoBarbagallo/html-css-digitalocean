@@ -39,7 +39,6 @@
     width: 30px;
     height: 70px;
     padding: calc((70px / 2) / 3) 0px;
-    margin-right: 20px;
 }
 
 .my_hamburger{
@@ -233,6 +232,36 @@ footer{
 }
 
 /* MY FIXED FISH */
+
+.my_fixed_fish{
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    background-color: #026AFF;
+    border-radius: 6px;
+}
+
+.my_fixed_fish img{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.my_red_dot{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: red;
+    text-align: center;
+    line-height: 16px;
+    color: white;
+}
+
 .my_fixed_cloud{
     position: fixed;
     bottom: 20px;
@@ -259,39 +288,14 @@ footer{
     bottom: 10px;
     right: -10px;
   }
-  
-
-.my_fixed_fish{
-    position: fixed;
-    bottom: 20px;
-    right: 40px;
-    background-color: #026AFF;
-    border-radius: 6px;
-}
-
-.my_fixed_fish img{
-    position: relative;
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-}
-
-.my_red_dot{
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: red;
-    text-align: center;
-    line-height: 20px;
-    color: white;
-}
 
 a.my_pop_up:hover + .my_fixed_cloud{
     display: block;
 }
+
+
+
+
 
 /* Utilities */
 
@@ -312,12 +316,6 @@ a.my_pop_up:hover + .my_fixed_cloud{
 .my_par{
     color: #3B5179;
     margin-bottom: 40px;
-}
-
-@media screen and (max-width: 767px){
-    .my_sponsors_card{
-        width: 50%
-    }
 }
 
 .my_dots{
@@ -347,4 +345,31 @@ a.my_pop_up:hover + .my_fixed_cloud{
 
 .my_no_gap{
     font-size: 0px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 767px) {
+    .my_sponsors_card{
+        width: 50%
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .my_fixed_fish{
+        bottom: 100px;
+        left: 40px;
+        width: 60px;
+    }
+
+    .my_fixed_cloud{
+        bottom: 20px;
+        left: 40px;
+    }
+
+    .my_arrow_right {
+        bottom: 10px;
+        left: 180px;
+      }
+
 }
