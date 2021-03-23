@@ -42,7 +42,7 @@
 
 }
 
-.my_invisible_button, .my_blue_botton{
+.my_list_right button{
     background-color: transparent;
 }
 
@@ -78,10 +78,6 @@
 
 /* MY HERO */
 
-section{
-    padding: 50px 0px;
-}
-
 .my_hero{
     background-image: url(img/bg-banner-home.jpg);
 }
@@ -95,17 +91,16 @@ section{
     color: #BBCDFF
 }
 
-.my_panel_container_one{
-    width: 90%;
-    margin: auto;
-    padding-bottom: 20px;
+.my_hero .panel{
+    padding: 20px;
 }
 
-.my_google_btn{
+
+.my_hero .panel button{
     position: relative;
 }
 
-.my_google_btn img{
+.my_hero .panel button img{
   height: 70%;
   width: 10%;
   object-fit: contain;
@@ -118,15 +113,16 @@ section{
 
 /* FIRST GREY SECTION */
 
-.my_sponsors_row{
-    margin: 40px 0px;
-}
-
-.my_sponsors_text{
+.grey_section p{
     padding-top: 40px;
     color: #677594;
     font-size: 20px;
 }
+
+.my_sponsors_row{
+    margin: 40px 0px;
+}
+
 
 .my_sponsors_card{
     width: calc(100% / 6);
@@ -147,8 +143,7 @@ section{
     filter:drop-shadow(4px 4px 5px gray);
 }
 
-.my_sponsors_text a{
-    font-size: 14px;
+.grey_section  a{
     color: #2B8EFF;
 }
 
@@ -165,16 +160,12 @@ section{
     color: #677594;
 }
 
-.my_row{
-    padding-top: 30px;
-}
 
 /* BIG SLIDE */
 
 .my_icon_container{
     display: inline-block;
     width: 10%;
-    vertical-align: middle;
     font-size: 14px;
 }
 
@@ -193,10 +184,6 @@ section{
    max-width: 100%;
 }
 
-.my_slide_par{
-    font-size: 18px;
-    font-weight: bold;
-}
 
 .my_icon_container >i:hover{
     color: black;
@@ -208,27 +195,28 @@ section{
 
 /* BLUE GRADIENT SECTION */
 
-.my_table{
+.my_blue_section table{
     margin: auto;
     color: white;
     margin-top: 30px;
 }
 
-.my_tr{
+.my_blue_section table tr{
     border-bottom: 1px solid white;
 }
 
-.my_td{
+.my_blue_section table tr td{
     padding: 10px 20px;
 }
 
-.my_table .my_tr:last-child{
+.my_blue_section table tr:last-child{
    border-bottom: none;
 }
 
+
 /* SMALL SLIDE */
 
-.my_panel_container img{
+.my_slide_container> .panel img{
     width: 50%;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -243,8 +231,7 @@ footer{
 }
 
 .my_footer_left_container{
-    padding-left: 60px;
-    padding-top: 40px;
+    padding: 40px 0px 0px 60px;
 }
 
 .my_footer_left_container p{
@@ -269,6 +256,7 @@ footer{
 .my_right_footer p{
     color: #8791A6;
 }
+
 
 /* MY FIXED FISH */
 
@@ -335,6 +323,10 @@ a.my_pop_up:hover + .my_fixed_cloud{
 
 /* Utilities */
 
+section{
+    padding: 50px 0px;
+}
+
 .grey_section{
     background-color: #F3F5F9;
 }
@@ -361,7 +353,6 @@ a.my_pop_up:hover + .my_fixed_cloud{
     border: 1px solid #2B8EFF;
     display: inline-block;
 }
-
 
 .my_full_dot{
     background-color:  #2B8EFF;
